@@ -9,12 +9,7 @@
     </parent>
 
     <artifactId>service</artifactId>
-    <version>1.0.0</version>
-    <name>service</name>
-    <description>service</description>
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -27,14 +22,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
