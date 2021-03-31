@@ -1,6 +1,19 @@
 server:
   port: 10001
 
+# 健康监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,env,shutdown
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+
+# 日志配置
 logging:
   file:
     path: /usr/local/share/applications/spring-boot-blank-project/
